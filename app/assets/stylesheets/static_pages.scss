@@ -1,0 +1,217 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.home-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background: #F0F0F0;
+
+    .home-page {
+        width: 100%;
+        max-width: 1120px;
+    }
+
+    .book-list-header,
+    .category-list-header,
+    .subject-list-header {
+        width: 100%;
+        padding: 16px;
+        background: #e76161;
+        color: #fff;
+    }
+
+    .book-list,
+    .category-list,
+    .subject-list {
+        background: #fff;
+        padding: 16px;
+        margin: 0;
+    }
+
+
+}
+
+.category-list-container {
+    padding: 16px 0;
+
+    .category-list-header {
+        font-size: 24px;
+        font-weight: 700;
+        background: #7132c4;
+
+        a {
+            font-size: 12px;
+            color: #ddd;
+            text-decoration: none;
+        }
+    }
+
+    .category-list {
+        display: flex;
+        justify-content: space-around;
+
+        .category-item-row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        a {
+            font-size: 18px;
+            color: #7132c4;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+}
+
+.subject-list-container {
+    padding: 16px 0;
+
+    .subject-list-header {
+        font-size: 24px;
+        font-weight: 700;
+        background: #06af8a;
+
+        a {
+            font-size: 12px;
+            color: #ddd;
+            text-decoration: none;
+        }
+    }
+
+    .subject-list {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        white-space: nowrap;
+        gap: 32px;
+
+        a {
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+
+    .subject-item-row {
+        background-color: #06af8a;
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+    }
+
+}
+
+.slide-promotion {
+    .slideshow-container {
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides>img {
+        height: 400px;
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: black;
+        font-weight: 900;
+        font-size: 26px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        color: #e76161;
+        background-color: #f4f4ec;
+    }
+
+    .dot-container {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #f4f4ec;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #e76161;
+    }
+
+    .fade_banner {
+        animation-name: fade_banner;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade_banner {
+        from {
+            opacity: 0.4;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .book-list.home {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (max-width: 660px) {
+
+    .book-list.home {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+    .book-list.home {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}

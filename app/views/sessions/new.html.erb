@@ -1,0 +1,18 @@
+<div class="form-container">
+  <div class="container">
+    <div class="form row">
+      <div class="login-form">
+        <% provide :title, t(".login") %>
+        <p class="form-title"><%= t(".login") %></p>
+        <%= form_for :session, url: login_path do |f| %>
+          <%= f.label :username %>
+          <%= f.text_field :Tk, class: "form-control" %>
+          <%= f.label :password %>
+          <%= f.password_field :password, class: "form-control" %>
+          <%= f.submit "login", class: "submit-btn" %>
+        <% end %>
+        <p><%= link_to "Forgot Password", new_password_reset_path %></p>
+      </div>
+    </div>
+  </div>
+</div>

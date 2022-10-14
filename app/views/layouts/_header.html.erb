@@ -1,0 +1,29 @@
+<div class="header">
+  <div class="header-body">
+    <div class="top-section">
+      <%= link_to "Thư viện Lê Quý Đôn", root_path, class: "logo" %>
+      <div class="header-right">
+        <%= link_to "Trang chủ", root_path %>
+        <%= link_to "Sách", "/books" %>
+        <%= link_to "Thư viện mở rộng", "/links" %>
+        <%= link_to "Tìm sách trên thư viện", local_books_path %>
+        <% if logged_in? %>
+          <%= link_to "Cá nhân", edit_user_path(current_user) %>
+          <%= link_to "Đăng xuất", logout_path, method: :delete %>
+        <% else %>
+          <%= link_to "Đăng nhập", login_path %>
+        <% end %>
+      </div>
+    </div>
+    <div class="bottom-section">
+      <form class="search-form-wrapper" action="/search">
+        <input name="q" type="text" placeholder="Nhập nội dung tìm kiếm" value="<%= params[:q] %>"/>
+        <input type="submit" hidden />
+        <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+      </form>
+      <a href="/">
+        <img src="http://thcslequydon.tpbacgiang.edu.vn/upload/38254/20171111/LEQUYDON_update_2_JPG.jpg" width="100%">
+      </a>
+    </div>
+  </div>
+</div>

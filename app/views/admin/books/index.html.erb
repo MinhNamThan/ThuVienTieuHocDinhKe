@@ -1,0 +1,51 @@
+<div class="admin-page">
+  <div> <%= render "admin/static_pages/sidebar" %> </div>
+  <div class="book-manage-page">
+    <div class="container">
+      <%= search_form_for [:admin, @q] do |f| %>
+        <div class="form-section">
+          <div class="col-6">
+            <%= f.label :title_cont %>
+            <%= f.search_field :title_cont %>
+          </div>
+          <div class="col-1">
+            <%= f.label :grade_cont %>
+            <%= f.select :grade_cont, options_for_select([["",""],["6", "6"],["7", "7"], ["8", "8"], ["9","9"], ["Mọi lứa tuổi","Mọi lứa tuổi"]]), class: "form-control"%>
+          </div>
+          <div class="col-1">
+            <%= f.label :category_id_eq %>
+            <%= f.select :category_id_eq, Category.asc_name.collect {|category| [category.name, category.id]}, include_blank: true , class: "form-control"%>
+          </div>
+          <div class="col-1">
+            <%= f.label :subject_id_eq %>
+            <%= f.select :subject_id_eq, Subject.asc_name.collect {|subject| [subject.name, subject.id]}, include_blank: true , class: "form-control"%>
+          </div>
+          <div class="col-1">
+            <%= sort_link(@q, :num_watch,"Hot", default_order: :desc) %>
+          </div>
+        </div>
+        <%= f.submit %>
+      <% end %>
+    </div>
+    <div class="book-list">
+      <% @books.each do |book| %>
+        <%= link_to admin_book_path(book) do %>
+          <div class="book-item-row">
+            <div class="image-wrapper">
+              <% if book.doc_file_pages.first %>
+                <%= image_tag book.doc_file_pages.first %>
+              <% end %>
+            </div>
+            <div class="detail-wrapper">
+              <p class="title">
+                <%= book.title %>
+                <span class="author">by <%= book.author %></span>
+              </p>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+    <%== pagy_nav(@pagy) %>
+  </div>
+</div>

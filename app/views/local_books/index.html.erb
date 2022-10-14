@@ -1,0 +1,38 @@
+<div class="local-page-wrapper">
+  <div class="local-page">
+    <div class="local-list">
+      <%= search_form_for @q do |f| %>
+        <div class="col-10">
+          <%= f.label :code_or_name_cont, "Nhập tên sách hoặc mã sách " %>
+          <%= f.search_field :code_or_name_cont %>
+        </div>
+        <%= f.submit %>
+      <% end %>
+    </div>
+
+    <table class="rwd-table">
+  <thead>
+    <tr>
+      <th>Mã</th>
+      <th>Tên</th>
+      <th>Vị trí</th>
+      <th>Môn học</th>
+      <th>Loại sách</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @local_books.each do |local_book| %>
+      <tr>
+        <td><%= local_book.code %></td>
+        <td><%= local_book.name %></td>
+        <td><%= local_book.poision %></td>
+        <td><%= local_book.subject_name %></td>
+        <td><%= local_book.category_name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%== pagy_nav(@pagy) %>
+  </div>
+</div>
+</div>

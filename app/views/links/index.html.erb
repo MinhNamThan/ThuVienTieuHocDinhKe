@@ -1,0 +1,17 @@
+<div class="link-page-wrapper">
+    <div class="link-page">
+        <div class="link-list">
+            <% @links.each do |link| %>
+                <div class="card link">
+                    <div class="link-describe">
+                        <%= link.describe %>
+                    </div>
+
+                    <div class="link-content">
+                        <a href="//<%= link.link %>" target="_blank"><%=link.link%></a>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</div>
