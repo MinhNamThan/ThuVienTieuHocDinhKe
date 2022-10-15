@@ -20,7 +20,7 @@ class CreateImagesOfPdfPagesJob < ApplicationJob
         # prep format
         convert.background "white"
         convert.flatten
-        convert.density 150
+        convert.density 200
         convert.quality 100
         # add page to be converted,./
         convert << page.path
