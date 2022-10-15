@@ -55,17 +55,17 @@ p {
 
 #logo {
   float: left;
-  margin-right: 10px;
   font-size: 1.7em;
   color: $white_color;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
   font-weight: bold;
   :hover {
     color: $white_color;
     text-decoration: none;
   }
+  width: 40%;
+  transform:translateX(50%);
 }
 
 /* footer */

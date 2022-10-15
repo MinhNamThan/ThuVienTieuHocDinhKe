@@ -11,7 +11,7 @@
             <div class="filter-header">
               Sắp xếp theo:
             </div>
-            <%= select_tag "sorts", options_for_select([["Tên A-Z", "title:asc"], ["Tên Z-A", "title:desc"], ["Lượt xem", "num_watch:desc"], ["Mới nhất", "created_at:desc"], ["Cũ nhất", "created_at:asc"]]), class: 'customer-select'  %>
+            <%= select_tag("sorts", options_for_select([["Tên A-Z", "title asc"], ["Tên Z-A", "title desc"], ["Lượt xem", "num_watch desc"], ["Mới nhất", "created_at desc"], ["Cũ nhất", "created_at asc"]], :selected => params[:sorts]), class: 'customer-select' )%>
           </div>
           <div class="multi-select">
             <div class="select-box-header">
@@ -92,14 +92,9 @@
                       </a>
                     <% end %>
                   <% end %>
+
                 </div>
-                <div class="pagination">
-                  <% if (@page > 1) %><a href="/books?page=<%= @page - 1%>">&laquo;</a><% end %>
-                  <% for i in (1..@totalPage) do %>
-                    <a href="/books?page=<%= i %>" class="<%= 'active' if (@page == i) %>"><%= i %></a>
-                  <% end %>
-                  <% if (@page < @totalPage) %><a href="/books?page=<%= @page + 1 %>">&raquo;</a><% end %>
-                </div>
+                <%== pagy_bootstrap_nav(@pagy) %>
               </div>
             </div>
           </div>

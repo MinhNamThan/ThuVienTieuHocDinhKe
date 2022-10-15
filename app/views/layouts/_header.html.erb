@@ -1,7 +1,7 @@
 <div class="header">
   <div class="header-body">
     <div class="top-section">
-      <%= link_to "Thư viện Lê Quý Đôn", root_path, class: "logo" %>
+      <%= link_to "Thư viện tiểu học Dĩnh Kế", root_path, class: "logo" %>
       <div class="header-right">
         <%= link_to "Trang chủ", root_path %>
         <%= link_to "Sách", "/books" %>
@@ -21,9 +21,7 @@
         <input type="submit" hidden />
         <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
       </form>
-      <a href="/">
-        <img src="http://thcslequydon.tpbacgiang.edu.vn/upload/38254/20171111/LEQUYDON_update_2_JPG.jpg" width="100%">
-      </a>
+      <%= image_tag "banner.png", alt: "Rails logo", width: "100%" %>
     </div>
   </div>
 </div>
