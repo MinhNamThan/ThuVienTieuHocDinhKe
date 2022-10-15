@@ -5,7 +5,9 @@ class BooksController < ApplicationController
     def index
         if (params[:sorts]) then
             @sorts = params[:sorts]
-            @sorts[":"] = " "
+
+
+
         else
             @sorts = "title"
         end
@@ -23,7 +25,7 @@ class BooksController < ApplicationController
             @books = @books.where("category_id in (?)", @category)
         end
         @total_books_user = @books
-        @books = @books.order(@sorts).offset((@page - 1) * BOOKS_PER_PAGE).limit(BOOKS_PER_PAGE)
+        @pagy, @books = pagy(@books.order(@sorts), items: BOOKS_PER_PAGE)
     end
 
     def new
