@@ -13,7 +13,7 @@
           <%= f.label :describe, "Miêu tả" %>
           <%= f.text_area :describe, class: "form-control" %>
           <%= f.label :grade, "Khối" %>
-          <%= f.select :grade, options_for_select([["6", "6"],["7", "7"], ["8", "8"], ["9", "9"], ["Mọi lứa tuổi", "Mọi lứa tuổi"]]), class: "form-control"%>
+          <%= f.select :grade, options_for_select([["1", "1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"], ["Mọi lứa tuổi", "Mọi lứa tuổi"]]), class: "form-control"%>
           <%= f.label :subject, "Môn học" %>
           <%= collection_select(:book, :subject_id, @subjects, :id, :name) %>
           <%= f.label :category, "Loại sách" %>
