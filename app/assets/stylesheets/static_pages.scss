@@ -215,3 +215,390 @@
         grid-template-columns: repeat(1, 1fr) !important;
     }
 }
+
+// css image show
+
+.slider--container {
+	position: relative; /* "relative", so that h1 and images can be set absolutely */
+	height: 70vh; /* Adjust the height to your needs here */
+	width: 60.5vw; /* Adjust the width to your needs here */
+	margin: 10px auto;
+	overflow: hidden;
+	border-radius: .125rem;
+	box-shadow: 0 0 .1rem .125rem rgba(0, 0, 0, 0.25);
+}
+
+.slider--image {
+	position: absolute;
+	z-index: 1;
+	left:0;
+	top:0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	animation: 50s ease-in-out infinite;
+}
+
+.slider--image:nth-of-type(1) {
+	animation-name: slide-01;
+}
+.slider--image:nth-of-type(2) {
+	animation-name: slide-02;
+}
+.slider--image:nth-of-type(3) {
+	animation-name: slide-03;
+}
+
+.slider--image:nth-of-type(4) {
+	animation-name: slide-04;
+}
+
+.slider--image:nth-of-type(5) {
+	animation-name: slide-05;
+}
+
+.slider--image:nth-of-type(6) {
+	animation-name: slide-06;
+}
+
+.slider--image:nth-of-type(7) {
+	animation-name: slide-07;
+}
+
+.slider--image:nth-of-type(8) {
+	animation-name: slide-08;
+}
+
+.slider--image:nth-of-type(9) {
+	animation-name: slide-09;
+}
+
+.slider--image:nth-of-type(10) {
+	animation-name: slide-10;
+}
+
+/* Images are overlaid and visible or invisible due to different transparency */
+/* Moving the images with transform: scale & translate */
+	/* Styles for webkit browsers */
+    @-webkit-keyframes slide-01 {
+        0%  { opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        8%  {opacity:1; -webkit-transform: scale(1) translate(-20px, -10px);}
+        15%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        22%  {opacity:0;}
+        29%  {opacity:0;}
+        36%  {opacity:0;}
+        44%  {opacity:0;}
+        52%  {opacity:0;}
+        60%  {opacity:0;}
+        68%  {opacity:0;}
+        76%  {opacity:0;}
+        84%  {opacity:0;}
+        92%  {opacity:0;}
+        100%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+    }
+    @-webkit-keyframes slide-02 {
+        0%  { opacity:0;}
+        8%  {opacity:0; -webkit-transform: scale(1) translate(-20px, -10px);}
+        15%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        22%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        29%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        36%  {opacity:0;}
+        44%  {opacity:0;}
+        52%  {opacity:0;}
+        60%  {opacity:0;}
+        68%  {opacity:0;}
+        76%  {opacity:0;}
+        84%  {opacity:0;}
+        92%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-03 {
+        0%  { opacity:0;}
+        8%  {opacity:0;}
+        15%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        22%  {opacity:1; -webkit-transform: scale(1.2) translate(-20px, 10px);}
+        29%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
+        36%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        44%  {opacity:0;}
+        52%  {opacity:0;}
+        60%  {opacity:0;}
+        68%  {opacity:0;}
+        76%  {opacity:0;}
+        84%  {opacity:0;}
+        92%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-04 {
+        0%  { opacity:0;}
+        8%  {opacity:0;}
+        15%  {opacity:0;}
+        22%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
+        29%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        36%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        44%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        52%  {opacity:0;}
+        60%  {opacity:0;}
+        68%  {opacity:0;}
+        76%  {opacity:0;}
+        84%  {opacity:0;}
+        92%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-05 {
+        0%  { opacity:0;}
+        8%  {opacity:0;}
+        15%  {opacity:0;}
+        22%  {opacity:0;}
+        29%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
+        36%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        44%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
+        52%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        60%  {opacity:0;}
+        68%  {opacity:0;}
+        76%  {opacity:0;}
+        84%  {opacity:0;}
+        92%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-06 {
+        0%  { opacity:0;}
+        8%  {opacity:0;}
+        15%  {opacity:0;}
+        22%  {opacity:0;}
+        29%  {opacity:0;}
+        36%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
+        44%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        52%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        60%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        68%  {opacity:0;}
+        76%  {opacity:0;}
+        84%  {opacity:0;}
+        92%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-07 {
+        0%  { opacity:0;}
+        8%  {opacity:0;}
+        15%  {opacity:0;}
+        22%  {opacity:0;}
+        29%  {opacity:0;}
+        36%  {opacity:0;}
+        44%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
+        52%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        60%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
+        68%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        76%  {opacity:0;}
+        84%  {opacity:0;}
+        92%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-08 {
+        0%  { opacity:0;}
+        8%  {opacity:0;}
+        15%  {opacity:0;}
+        22%  {opacity:0;}
+        29%  {opacity:0;}
+        36%  {opacity:0;}
+        44%  {opacity:0;}
+        52%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
+        60%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        68%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        76%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        84%  {opacity:0;}
+        92%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-09 {
+        0%  { opacity:0;}
+        8%  {opacity:0;}
+        15%  {opacity:0;}
+        22%  {opacity:0;}
+        29%  {opacity:0;}
+        36%  {opacity:0;}
+        44%  {opacity:0;}
+        52%  {opacity:0;}
+        60%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
+        68%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        76%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
+        84%  {opacity:0;-webkit-transform: scale(1.2) translate(0, 0);}
+        92%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-10 {
+        0%  { opacity:0;}
+        8%  {opacity:0;}
+        15%  {opacity:0;}
+        22%  {opacity:0;}
+        29%  {opacity:0;}
+        36%  {opacity:0;}
+        44%  {opacity:0;}
+        52%  {opacity:0;}
+        60%  {opacity:0;}
+        68%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
+        76%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        84%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        92%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        100%  {opacity:0;}
+    }
+
+    	/* Styles for all other browsers */
+@keyframes slide-01 {
+    0%  { opacity:1; transform: scale(1.2) translate(0, 0);}
+    8%  {opacity:1; transform: scale(1) translate(-20px, -10px);}
+    15%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    22%  {opacity:0;}
+    29%  {opacity:0;}
+    36%  {opacity:0;}
+    44%  {opacity:0;}
+    52%  {opacity:0;}
+    60%  {opacity:0;}
+    68%  {opacity:0;}
+    76%  {opacity:0;}
+    84%  {opacity:0;}
+    92%  {opacity:0;}
+    100%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+}
+@keyframes slide-02 {
+    0%  { opacity:0;}
+    8%  {opacity:0; transform: scale(1) translate(-20px, -10px);}
+    15%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    22%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    29%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    36%  {opacity:0;}
+    44%  {opacity:0;}
+    52%  {opacity:0;}
+    60%  {opacity:0;}
+    68%  {opacity:0;}
+    76%  {opacity:0;}
+    84%  {opacity:0;}
+    92%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-03 {
+    0%  { opacity:0;}
+    8%  {opacity:0;}
+    15%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    22%  {opacity:1; transform: scale(1.2) translate(-20px, 10px);}
+    29%  {opacity:1; transform: scale(1) translate(20px, -10px);}
+    36%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    44%  {opacity:0;}
+    52%  {opacity:0;}
+    60%  {opacity:0;}
+    68%  {opacity:0;}
+    76%  {opacity:0;}
+    84%  {opacity:0;}
+    92%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-04 {
+    0%  { opacity:0;}
+    8%  {opacity:0;}
+    15%  {opacity:0;}
+    22%  {opacity:0; transform: scale(1) translate(20px, -10px);}
+    29%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    36%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    44%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    52%  {opacity:0;}
+    60%  {opacity:0;}
+    68%  {opacity:0;}
+    76%  {opacity:0;}
+    84%  {opacity:0;}
+    92%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-05 {
+    0%  { opacity:0;}
+    8%  {opacity:0;}
+    15%  {opacity:0;}
+    22%  {opacity:0;}
+    29%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
+    36%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    44%  {opacity:1; transform: scale(1) translate(20px, -10px);}
+    52%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    60%  {opacity:0;}
+    68%  {opacity:0;}
+    76%  {opacity:0;}
+    84%  {opacity:0;}
+    92%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-06 {
+    0%  { opacity:0;}
+    8%  {opacity:0;}
+    15%  {opacity:0;}
+    22%  {opacity:0;}
+    29%  {opacity:0;}
+    36%  {opacity:0; transform: scale(1) translate(20px, -10px);}
+    44%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    52%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    60%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    68%  {opacity:0;}
+    76%  {opacity:0;}
+    84%  {opacity:0;}
+    92%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-07 {
+    0%  { opacity:0;}
+    8%  {opacity:0;}
+    15%  {opacity:0;}
+    22%  {opacity:0;}
+    29%  {opacity:0;}
+    36%  {opacity:0;}
+    44%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
+    52%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    60%  {opacity:1; transform: scale(1) translate(20px, -10px);}
+    68%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    76%  {opacity:0;}
+    84%  {opacity:0;}
+    92%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-08 {
+    0%  { opacity:0;}
+    8%  {opacity:0;}
+    15%  {opacity:0;}
+    22%  {opacity:0;}
+    29%  {opacity:0;}
+    36%  {opacity:0;}
+    44%  {opacity:0;}
+    52%  {opacity:0; transform: scale(1) translate(20px, -10px);}
+    60%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    68%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    76%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    84%  {opacity:0;}
+    92%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-09 {
+    0%  { opacity:0;}
+    8%  {opacity:0;}
+    15%  {opacity:0;}
+    22%  {opacity:0;}
+    29%  {opacity:0;}
+    36%  {opacity:0;}
+    44%  {opacity:0;}
+    52%  {opacity:0;}
+    60%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
+    68%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    76%  {opacity:1; transform: scale(1) translate(20px, -10px);}
+    84%  {opacity:0;transform: scale(1.2) translate(0, 0);}
+    92%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-10 {
+    0%  { opacity:0;}
+    8%  {opacity:0;}
+    15%  {opacity:0;}
+    22%  {opacity:0;}
+    29%  {opacity:0;}
+    36%  {opacity:0;}
+    44%  {opacity:0;}
+    52%  {opacity:0;}
+    60%  {opacity:0;}
+    68%  {opacity:0; transform: scale(1) translate(20px, -10px);}
+    76%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    84%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    92%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    100%  {opacity:0;}
+}
