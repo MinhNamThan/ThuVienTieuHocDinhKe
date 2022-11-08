@@ -31,3 +31,4 @@ set :assets_prefix, 'packs'
 set :assets_manifests, lambda { # Tell Capistrano-Rails how to find the Webpacker manifests
   [release_path.join('public', fetch(:assets_prefix), 'manifest.json*')]
 }
+set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }

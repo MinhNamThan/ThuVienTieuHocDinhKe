@@ -35,6 +35,7 @@ require "capistrano/rails/migrations"
 # require "capistrano/passenger"
 require 'capistrano/puma'
 require 'capistrano/puma/nginx'
+require "whenever/capistrano"
 install_plugin Capistrano::Puma
 install_plugin Capistrano::Puma::Systemd
 
