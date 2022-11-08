@@ -23,6 +23,7 @@ gem "turbolinks", "~> 5"
 gem "webpacker", "~> 5.0"
 gem "pry-rails"
 gem "ransack"
+gem 'whenever', require: false
 gem 'capistrano', '>=3.12.0'
 gem 'capistrano3-puma'
 gem 'capistrano-rails', require: false

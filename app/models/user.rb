@@ -3,7 +3,7 @@ class User < ApplicationRecord
   ransacker :role, formatter: proc {|v| roles[v]} do |parent|
     parent.table[:role]
   end
-
+  has_one :user_access, dependent: :destroy
   belongs_to :class_user
 
   attr_accessor :reset_token

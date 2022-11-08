@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_09_130533) do
+ActiveRecord::Schema.define(version: 2022_11_07_134420) do
 
   create_table "accesses", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.integer "num_access"
@@ -109,6 +109,14 @@ ActiveRecord::Schema.define(version: 2022_09_09_130533) do
     t.index ["user_id"], name: "index_teachers_on_user_id"
   end
 
+  create_table "user_accesses", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "num_access", default: 0
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_user_accesses_on_user_id"
+  end
+
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "Tk", null: false
     t.string "password_digest"
@@ -132,5 +140,6 @@ ActiveRecord::Schema.define(version: 2022_09_09_130533) do
   add_foreign_key "local_books", "categories"
   add_foreign_key "local_books", "subjects"
   add_foreign_key "teachers", "users"
+  add_foreign_key "user_accesses", "users"
   add_foreign_key "users", "class_users"
 end

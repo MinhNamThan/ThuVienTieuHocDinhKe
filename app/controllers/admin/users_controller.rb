@@ -37,8 +37,15 @@ class Admin::UsersController < Admin::BaseController
       @user = User.new(user_params)
 
       if @user.save
-        flash[:success] = "Successed"
-        redirect_to admin_users_path
+        @user_access = UserAccess.new(user_id: @user.id);
+        if(@user_access.save)
+          flash[:success] = "Successed"
+          redirect_to admin_users_path
+        else
+          flash[:danger] = "can't add user access"
+          @class_users = ClassUser.asc_name
+          render :new
+        end
       else
           flash[:danger] = "No No No No No No No"
           @class_users = ClassUser.asc_name

@@ -1,0 +1,15 @@
+current directory: /home/namthan/Documents/LearnRubyOnRails/Rails/ThuVienTieuHocDinhKe/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/home/namthan/.rbenv/versions/2.7.1/bin/ruby -I /home/namthan/.rbenv/versions/2.7.1/lib/ruby/2.7.0 -r ./siteconf20221108-6807-fj0x2t.rb extconf.rb
+creating Makefile
+
+current directory: /home/namthan/Documents/LearnRubyOnRails/Rails/ThuVienTieuHocDinhKe/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/namthan/Documents/LearnRubyOnRails/Rails/ThuVienTieuHocDinhKe/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/namthan/Documents/LearnRubyOnRails/Rails/ThuVienTieuHocDinhKe/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20221108-6807-1y4pix8/skiptrace/internal

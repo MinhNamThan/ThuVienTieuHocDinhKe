@@ -5,6 +5,14 @@ module SessionsHelper
       @accesses = Access.first
       num_access = @accesses.num_access + 1
       @accesses.update_attribute :num_access, num_access
+      if user.user_access.nil?
+        @user_access = UserAccess.new(user_id: user.id);
+        @user_access.save!
+      else
+        @user_access = user.user_access
+      end
+      num_access = @user_access.num_access + 1
+      @user_access.update_attribute :num_access, num_access
     end
   end
 
