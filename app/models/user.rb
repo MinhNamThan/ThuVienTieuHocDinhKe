@@ -4,6 +4,7 @@ class User < ApplicationRecord
     parent.table[:role]
   end
   has_one :user_access, dependent: :destroy
+  has_many :books
   belongs_to :class_user
 
   attr_accessor :reset_token
@@ -16,6 +17,7 @@ class User < ApplicationRecord
 
   scope :asc_name, ->{order name: :asc}
   scope :student_with, ->id {where("class_user_id = ?", id)}
+  
 
   delegate :name, to: :class_user, prefix: :class_user, allow_nil: true
 

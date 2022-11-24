@@ -21,6 +21,10 @@
             <%= f.select :subject_id_eq, Subject.asc_name.collect {|subject| [subject.name, subject.id]}, include_blank: true , class: "form-control"%>
           </div>
           <div class="col-1">
+            <%= f.label :by_teacher %>
+            <%= f.select :user_id_eq, @teachers.collect {|teacher| [teacher.name, teacher.id]}, include_blank: true , class: "form-control"%>
+          </div>
+          <div class="col-1">
             <%= sort_link(@q, :num_watch,"Hot", default_order: :desc) %>
           </div>
         </div>
