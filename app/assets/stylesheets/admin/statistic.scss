@@ -1,6 +1,6 @@
 .statistics-page {
     flex: 1 1;
-    background-color: #F3F3F9;
+    background-color: #f3f3f9;
     padding: 50px;
 
     .total-section {
@@ -53,7 +53,7 @@
     }
 
     .admin-list {
-        margin-top: 32px;
+        margin: 32px 0px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 16px;
@@ -67,5 +67,75 @@
             padding: 16px;
             border-radius: 12px;
         }
+    }
+    .btn-submit {
+        background-color: #04aa6d;
+        border: none;
+        color: white;
+        padding: 8px 8px;
+        text-decoration: none;
+        margin: px 2px;
+        cursor: pointer;
+        font-size: 20px;
+        width: 20%;
+        border-radius: 8px;
+    }
+    label {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .date-time {
+        display: inline-block;
+        width: 35%;
+        margin: 20px;
+    }
+    .form_tag_class {
+        display: inline;
+    }
+    #start,
+    #end {
+        width: 90%;
+        height: 30px;
+    }
+    /* Removes the clear button from date inputs */
+    #start,
+    #end::-webkit-clear-button {
+        display: none;
+    }
+
+    /* Removes the spin button */
+    #start,
+    #end::-webkit-inner-spin-button {
+        display: none;
+    }
+
+    /* Always display the drop down caret */
+    #start,
+    #end::-webkit-calendar-picker-indicator {
+        color: #2c3e50;
+    }
+
+    /* A few custom styles for date inputs */
+    #start,
+    #end {
+        appearance: none;
+        -webkit-appearance: none;
+        color: #95a5a6;
+        font-family: "Helvetica", arial, sans-serif;
+        font-size: 18px;
+        border: 1px solid #ecf0f1;
+        background: #05b7e4;
+        padding: 5px;
+        display: inline-block !important;
+        visibility: visible !important;
+    }
+
+    #start,
+    #end,
+    focus {
+        color: #3b50ad;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
     }
 }

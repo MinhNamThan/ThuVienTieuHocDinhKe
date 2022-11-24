@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_07_134420) do
+ActiveRecord::Schema.define(version: 2022_11_24_132626) do
 
   create_table "accesses", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.integer "num_access"
@@ -58,8 +58,10 @@ ActiveRecord::Schema.define(version: 2022_11_07_134420) do
     t.bigint "category_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id"
     t.index ["category_id"], name: "index_books_on_category_id"
     t.index ["subject_id"], name: "index_books_on_subject_id"
+    t.index ["user_id"], name: "index_books_on_user_id"
   end
 
   create_table "categories", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|

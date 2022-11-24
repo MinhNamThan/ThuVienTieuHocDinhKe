@@ -18,6 +18,8 @@
           <%= collection_select(:book, :subject_id, @subjects, :id, :name) %>
           <%= f.label :category, "Loại sách" %>
           <%= collection_select(:book, :category_id, @categories, :id, :name) %>
+          <%= f.label :user_id, "Người đăng" %>
+          <%= collection_select(:book, :user_id, @teachers, :id, :name, include_blank: true) %>
           <%= f.label :publish_on, "Ngày xuất bản" %>
           <%= f.date_field :publish_on, class: "form-control"%>
           <%= f.submit "Update", class: "submit-btn" %>

@@ -2,6 +2,7 @@ class Admin::BooksController < Admin::BaseController
     before_action :find_book, except: %i(index new create)
     def index
       @categories = Category.asc_name
+      @teachers = User.asc_name.where("role = 1")
       @q = Book.asc_title.ransack(params[:q])
       @pagy, @books = pagy(@q.result, items: 8)
     end
@@ -17,6 +18,7 @@ class Admin::BooksController < Admin::BaseController
 
     def create
       @book = Book.new(book_params)
+      @book.user_id = current_user.id
       respond_to do |format|
         if @book.save
           CreateImagesOfPdfPagesJob.set(wait: 2.seconds).perform_later(@book.id)
@@ -35,6 +37,7 @@ class Admin::BooksController < Admin::BaseController
     def edit
       @subjects = Subject.asc_name
       @categories = Category.asc_name
+      @teachers = User.where("role = 1")
     end
 
     def update
@@ -52,7 +55,7 @@ class Admin::BooksController < Admin::BaseController
       respond_to do |format|
         format.html { redirect_to admin_books_url, notice: "book was successfully destroyed." }
         format.json { head :no_content }
-    end
+      end
     end
 
       private
@@ -63,7 +66,7 @@ class Admin::BooksController < Admin::BaseController
 
     def book_params
       params.require(:book).permit(:id, :title, :author,
-                                    :subject_id, :grade, :category_id, :describe, :publish_on, :doc_file)
+                                    :subject_id, :grade, :category_id, :user_id, :describe, :publish_on, :doc_file)
     end
 
     def find_book

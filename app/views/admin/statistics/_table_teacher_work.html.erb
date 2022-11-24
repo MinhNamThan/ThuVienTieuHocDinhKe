@@ -1,0 +1,16 @@
+<table class="rwd-table" id="book-time-table">
+  <thead>
+    <tr>
+      <th>Tên Giáo viên</th>
+      <th>Số sách đã đăng</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @teachers.each do |teacher| %>
+      <tr>
+        <td><%= teacher.name %></td>
+        <td><%= teacher.books.book_time(@start_date, @end_date).count %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
