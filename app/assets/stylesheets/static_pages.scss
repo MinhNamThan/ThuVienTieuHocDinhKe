@@ -236,7 +236,7 @@
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-	animation: 50s ease-in-out infinite;
+	animation: 70s ease-in-out infinite;
 }
 
 .slider--image:nth-of-type(1) {
@@ -277,328 +277,1190 @@
 	animation-name: slide-10;
 }
 
+.slider--image:nth-of-type(11) {
+	animation-name: slide-11;
+}
+
+.slider--image:nth-of-type(12) {
+	animation-name: slide-12;
+}
+
+.slider--image:nth-of-type(13) {
+	animation-name: slide-13;
+}
+
+.slider--image:nth-of-type(14) {
+	animation-name: slide-14;
+}
+.slider--image:nth-of-type(15) {
+	animation-name: slide-15;
+}
+.slider--image:nth-of-type(16) {
+	animation-name: slide-16;
+}
+.slider--image:nth-of-type(17) {
+	animation-name: slide-17;
+}
+.slider--image:nth-of-type(18) {
+	animation-name: slide-18;
+}
+.slider--image:nth-of-type(19) {
+	animation-name: slide-19;
+}
+.slider--image:nth-of-type(20) {
+	animation-name: slide-20;
+}
+.slider--image:nth-of-type(21) {
+	animation-name: slide-21;
+}
+.slider--image:nth-of-type(22) {
+	animation-name: slide-22;
+}
+
+.slider--image:nth-of-type(23) {
+	animation-name: slide-23;
+}
+.slider--image:nth-of-type(24) {
+	animation-name: slide-24;
+}
+
+
 /* Images are overlaid and visible or invisible due to different transparency */
 /* Moving the images with transform: scale & translate */
 	/* Styles for webkit browsers */
     @-webkit-keyframes slide-01 {
         0%  { opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
-        8%  {opacity:1; -webkit-transform: scale(1) translate(-20px, -10px);}
-        15%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
-        22%  {opacity:0;}
-        29%  {opacity:0;}
+        4%  {opacity:1; -webkit-transform: scale(1) translate(-20px, -10px);}
+        8%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        16%  {opacity:0;}
+        20%  {opacity:0;}
+        24%  {opacity:0;}
+        28%  {opacity:0;}
+        32%  {opacity:0;}
         36%  {opacity:0;}
+        40%  {opacity:0;}
         44%  {opacity:0;}
+        48%  {opacity:0;}
         52%  {opacity:0;}
+        56%  {opacity:0;}
         60%  {opacity:0;}
+        64%  {opacity:0;}
         68%  {opacity:0;}
+        72%  {opacity:0;}
         76%  {opacity:0;}
+        80%  {opacity:0;}
         84%  {opacity:0;}
+        88%  {opacity:0;}
         92%  {opacity:0;}
+        96%  {opacity:0;}
         100%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
     }
     @-webkit-keyframes slide-02 {
         0%  { opacity:0;}
-        8%  {opacity:0; -webkit-transform: scale(1) translate(-20px, -10px);}
-        15%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
-        22%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
-        29%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        4%  {opacity:0; -webkit-transform: scale(1) translate(-20px, -10px);}
+        8%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        16%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        20%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        24%  {opacity:0;}
+        28%  {opacity:0;}
+        32%  {opacity:0;}
         36%  {opacity:0;}
+        40%  {opacity:0;}
         44%  {opacity:0;}
+        48%  {opacity:0;}
         52%  {opacity:0;}
+        56%  {opacity:0;}
         60%  {opacity:0;}
+        64%  {opacity:0;}
         68%  {opacity:0;}
+        72%  {opacity:0;}
         76%  {opacity:0;}
+        80%  {opacity:0;}
         84%  {opacity:0;}
+        88%  {opacity:0;}
         92%  {opacity:0;}
+        96%  {opacity:0;}
         100%  {opacity:0;}
     }
     @-webkit-keyframes slide-03 {
         0%  { opacity:0;}
-        8%  {opacity:0;}
-        15%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
-        22%  {opacity:1; -webkit-transform: scale(1.2) translate(-20px, 10px);}
-        29%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
-        36%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        4%  { opacity:0;}
+        8%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        16%  {opacity:1; -webkit-transform: scale(1.2) translate(-20px, 10px);}
+        20%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
+        24%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        28%  {opacity:0;}
+        32%  {opacity:0;}
+        36%  {opacity:0;}
+        40%  {opacity:0;}
         44%  {opacity:0;}
+        48%  {opacity:0;}
         52%  {opacity:0;}
+        56%  {opacity:0;}
         60%  {opacity:0;}
+        64%  {opacity:0;}
         68%  {opacity:0;}
+        72%  {opacity:0;}
         76%  {opacity:0;}
+        80%  {opacity:0;}
         84%  {opacity:0;}
+        88%  {opacity:0;}
         92%  {opacity:0;}
+        96%  {opacity:0;}
         100%  {opacity:0;}
     }
     @-webkit-keyframes slide-04 {
         0%  { opacity:0;}
-        8%  {opacity:0;}
-        15%  {opacity:0;}
-        22%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
-        29%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
-        36%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
-        44%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
+        20%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        24%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        28%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        32%  {opacity:0;}
+        36%  {opacity:0;}
+        40%  {opacity:0;}
+        44%  {opacity:0;}
+        48%  {opacity:0;}
         52%  {opacity:0;}
+        56%  {opacity:0;}
         60%  {opacity:0;}
+        64%  {opacity:0;}
         68%  {opacity:0;}
+        72%  {opacity:0;}
         76%  {opacity:0;}
+        80%  {opacity:0;}
         84%  {opacity:0;}
+        88%  {opacity:0;}
         92%  {opacity:0;}
+        96%  {opacity:0;}
         100%  {opacity:0;}
     }
     @-webkit-keyframes slide-05 {
         0%  { opacity:0;}
-        8%  {opacity:0;}
-        15%  {opacity:0;}
-        22%  {opacity:0;}
-        29%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
-        36%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
-        44%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
-        52%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
+        24%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        28%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
+        32%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        36%  {opacity:0;}
+        40%  {opacity:0;}
+        44%  {opacity:0;}
+        48%  {opacity:0;}
+        52%  {opacity:0;}
+        56%  {opacity:0;}
         60%  {opacity:0;}
+        64%  {opacity:0;}
         68%  {opacity:0;}
+        72%  {opacity:0;}
         76%  {opacity:0;}
+        80%  {opacity:0;}
         84%  {opacity:0;}
+        88%  {opacity:0;}
         92%  {opacity:0;}
+        96%  {opacity:0;}
         100%  {opacity:0;}
     }
     @-webkit-keyframes slide-06 {
         0%  { opacity:0;}
-        8%  {opacity:0;}
-        15%  {opacity:0;}
-        22%  {opacity:0;}
-        29%  {opacity:0;}
-        36%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
-        44%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
-        52%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
-        60%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
+        28%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        32%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        36%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        40%  {opacity:0;}
+        44%  {opacity:0;}
+        48%  {opacity:0;}
+        52%  {opacity:0;}
+        56%  {opacity:0;}
+        60%  {opacity:0;}
+        64%  {opacity:0;}
         68%  {opacity:0;}
+        72%  {opacity:0;}
         76%  {opacity:0;}
+        80%  {opacity:0;}
         84%  {opacity:0;}
+        88%  {opacity:0;}
         92%  {opacity:0;}
+        96%  {opacity:0;}
         100%  {opacity:0;}
     }
     @-webkit-keyframes slide-07 {
         0%  { opacity:0;}
-        8%  {opacity:0;}
-        15%  {opacity:0;}
-        22%  {opacity:0;}
-        29%  {opacity:0;}
-        36%  {opacity:0;}
-        44%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
-        52%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
-        60%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
-        68%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
+        32%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        36%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
+        40%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        44%  {opacity:0;}
+        48%  {opacity:0;}
+        52%  {opacity:0;}
+        56%  {opacity:0;}
+        60%  {opacity:0;}
+        64%  {opacity:0;}
+        68%  {opacity:0;}
+        72%  {opacity:0;}
         76%  {opacity:0;}
+        80%  {opacity:0;}
         84%  {opacity:0;}
+        88%  {opacity:0;}
         92%  {opacity:0;}
+        96%  {opacity:0;}
         100%  {opacity:0;}
     }
     @-webkit-keyframes slide-08 {
         0%  { opacity:0;}
-        8%  {opacity:0;}
-        15%  {opacity:0;}
-        22%  {opacity:0;}
-        29%  {opacity:0;}
-        36%  {opacity:0;}
-        44%  {opacity:0;}
-        52%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
-        60%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
-        68%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
-        76%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  { opacity:0;}
+        32%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
+        36%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        40%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        44%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        48%  {opacity:0;}
+        52%  {opacity:0;}
+        56%  {opacity:0;}
+        60%  {opacity:0;}
+        64%  {opacity:0;}
+        68%  {opacity:0;}
+        72%  {opacity:0;}
+        76%  {opacity:0;}
+        80%  {opacity:0;}
         84%  {opacity:0;}
+        88%  {opacity:0;}
         92%  {opacity:0;}
+        96%  {opacity:0;}
         100%  {opacity:0;}
     }
     @-webkit-keyframes slide-09 {
         0%  { opacity:0;}
-        8%  {opacity:0;}
-        15%  {opacity:0;}
-        22%  {opacity:0;}
-        29%  {opacity:0;}
-        36%  {opacity:0;}
-        44%  {opacity:0;}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  { opacity:0;}
+        32%  { opacity:0;}
+        36%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
+        40%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        44%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
+        48%  {opacity:0;-webkit-transform: scale(1.2) translate(0, 0);}
         52%  {opacity:0;}
-        60%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
-        68%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
-        76%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
-        84%  {opacity:0;-webkit-transform: scale(1.2) translate(0, 0);}
+        56%  {opacity:0;}
+        60%  {opacity:0;}
+        64%  {opacity:0;}
+        68%  {opacity:0;}
+        72%  {opacity:0;}
+        76%  {opacity:0;}
+        80%  {opacity:0;}
+        84%  {opacity:0;}
+        88%  {opacity:0;}
         92%  {opacity:0;}
+        96%  {opacity:0;}
         100%  {opacity:0;}
     }
     @-webkit-keyframes slide-10 {
         0%  { opacity:0;}
-        8%  {opacity:0;}
-        15%  {opacity:0;}
-        22%  {opacity:0;}
-        29%  {opacity:0;}
-        36%  {opacity:0;}
-        44%  {opacity:0;}
-        52%  {opacity:0;}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  { opacity:0;}
+        32%  { opacity:0;}
+        36%  { opacity:0;}
+        40%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
+        44%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        48%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        52%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        56%  {opacity:0;}
         60%  {opacity:0;}
-        68%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
+        64%  {opacity:0;}
+        68%  {opacity:0;}
+        72%  {opacity:0;}
+        76%  {opacity:0;}
+        80%  {opacity:0;}
+        84%  {opacity:0;}
+        88%  {opacity:0;}
+        92%  {opacity:0;}
+        96%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-11 {
+        0%  { opacity:0;}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  { opacity:0;}
+        32%  { opacity:0;}
+        36%  { opacity:0;}
+        40%  { opacity:0;}
+        44%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
+        48%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        52%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
+        56%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        60%  {opacity:0;}
+        64%  {opacity:0;}
+        68%  {opacity:0;}
+        72%  {opacity:0;}
+        76%  {opacity:0;}
+        80%  {opacity:0;}
+        84%  {opacity:0;}
+        88%  {opacity:0;}
+        92%  {opacity:0;}
+        96%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-12 {
+        0%  { opacity:0;}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  { opacity:0;}
+        32%  { opacity:0;}
+        36%  { opacity:0;}
+        40%  { opacity:0;}
+        44%  { opacity:0;}
+        48%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
+        52%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        56%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        60%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        64%  {opacity:0;}
+        68%  {opacity:0;}
+        72%  {opacity:0;}
+        76%  {opacity:0;}
+        80%  {opacity:0;}
+        84%  {opacity:0;}
+        88%  {opacity:0;}
+        92%  {opacity:0;}
+        96%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-13 {
+        0%  { opacity:0;}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  { opacity:0;}
+        32%  { opacity:0;}
+        36%  { opacity:0;}
+        40%  { opacity:0;}
+        44%  { opacity:0;}
+        48%  { opacity:0;}
+        52%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
+        56%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        60%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
+        64%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        68%  {opacity:0;}
+        72%  {opacity:0;}
+        76%  {opacity:0;}
+        80%  {opacity:0;}
+        84%  {opacity:0;}
+        88%  {opacity:0;}
+        92%  {opacity:0;}
+        96%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-14 {
+        0%  { opacity:0;}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  { opacity:0;}
+        32%  { opacity:0;}
+        36%  { opacity:0;}
+        40%  { opacity:0;}
+        44%  { opacity:0;}
+        48%  { opacity:0;}
+        52%  { opacity:0;}
+        56%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
+        60%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        64%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        68%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        72%  {opacity:0;}
+        76%  {opacity:0;}
+        80%  {opacity:0;}
+        84%  {opacity:0;}
+        88%  {opacity:0;}
+        92%  {opacity:0;}
+        96%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-15 {
+        0%  { opacity:0;}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  { opacity:0;}
+        32%  { opacity:0;}
+        36%  { opacity:0;}
+        40%  { opacity:0;}
+        44%  { opacity:0;}
+        48%  { opacity:0;}
+        52%  { opacity:0;}
+        56%  { opacity:0;}
+        60%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
+        64%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        68%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
+        72%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        76%  {opacity:0;}
+        80%  {opacity:0;}
+        84%  {opacity:0;}
+        88%  {opacity:0;}
+        92%  {opacity:0;}
+        96%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-16 {
+        0%  { opacity:0;}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  { opacity:0;}
+        32%  { opacity:0;}
+        36%  { opacity:0;}
+        40%  { opacity:0;}
+        44%  { opacity:0;}
+        48%  { opacity:0;}
+        52%  { opacity:0;}
+        56%  { opacity:0;}
+        60%  { opacity:0;}
+        64%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
+        68%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        72%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        76%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        80%  {opacity:0;}
+        84%  {opacity:0;}
+        88%  {opacity:0;}
+        92%  {opacity:0;}
+        96%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-17 {
+        0%  { opacity:0;}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  { opacity:0;}
+        32%  { opacity:0;}
+        36%  { opacity:0;}
+        40%  { opacity:0;}
+        44%  { opacity:0;}
+        48%  { opacity:0;}
+        52%  { opacity:0;}
+        56%  { opacity:0;}
+        60%  { opacity:0;}
+        64%  { opacity:0;}
+        68%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
+        72%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        76%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
+        80%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        84%  {opacity:0;}
+        88%  {opacity:0;}
+        92%  {opacity:0;}
+        96%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-18 {
+        0%  { opacity:0;}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  { opacity:0;}
+        32%  { opacity:0;}
+        36%  { opacity:0;}
+        40%  { opacity:0;}
+        44%  { opacity:0;}
+        48%  { opacity:0;}
+        52%  { opacity:0;}
+        56%  { opacity:0;}
+        60%  { opacity:0;}
+        64%  { opacity:0;}
+        68%  { opacity:0;}
+        72%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
         76%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
-        84%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
-        92%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        80%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        84%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        88%  {opacity:0;}
+        92%  {opacity:0;}
+        96%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-19 {
+        0%  { opacity:0;}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  { opacity:0;}
+        32%  { opacity:0;}
+        36%  { opacity:0;}
+        40%  { opacity:0;}
+        44%  { opacity:0;}
+        48%  { opacity:0;}
+        52%  { opacity:0;}
+        56%  { opacity:0;}
+        60%  { opacity:0;}
+        64%  { opacity:0;}
+        68%  { opacity:0;}
+        72%  { opacity:0;}
+        76%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
+        80%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        84%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
+        88%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        92%  {opacity:0;}
+        96%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-20 {
+        0%  { opacity:0;}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  { opacity:0;}
+        32%  { opacity:0;}
+        36%  { opacity:0;}
+        40%  { opacity:0;}
+        44%  { opacity:0;}
+        48%  { opacity:0;}
+        52%  { opacity:0;}
+        56%  { opacity:0;}
+        60%  { opacity:0;}
+        64%  { opacity:0;}
+        68%  { opacity:0;}
+        72%  { opacity:0;}
+        76%  { opacity:0;}
+        80%  {opacity:0; -webkit-transform: scale(1) translate(20px, -10px);}
+        84%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        88%  {opacity:1; -webkit-transform: scale(1) translate(-20px, 10px);}
+        92%  {opacity:0; -webkit-transform: scale(1.2) translate(0, 0);}
+        96%  {opacity:0;}
+        100%  {opacity:0;}
+    }
+    @-webkit-keyframes slide-21 {
+        0%  { opacity:0;}
+        4%  { opacity:0;}
+        8%  { opacity:0;}
+        16% { opacity:0;}
+        20% { opacity:0;}
+        24%  { opacity:0;}
+        28%  { opacity:0;}
+        32%  { opacity:0;}
+        36%  { opacity:0;}
+        40%  { opacity:0;}
+        44%  { opacity:0;}
+        48%  { opacity:0;}
+        52%  { opacity:0;}
+        56%  { opacity:0;}
+        60%  { opacity:0;}
+        64%  { opacity:0;}
+        68%  { opacity:0;}
+        72%  { opacity:0;}
+        76%  { opacity:0;}
+        80%  { opacity:0;}
+        84%  {opacity:0; -webkit-transform: scale(1) translate(-20px, 10px);}
+        88%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
+        92%  {opacity:1; -webkit-transform: scale(1) translate(20px, -10px);}
+        96%  {opacity:1; -webkit-transform: scale(1.2) translate(0, 0);}
         100%  {opacity:0;}
     }
 
     	/* Styles for all other browsers */
 @keyframes slide-01 {
     0%  { opacity:1; transform: scale(1.2) translate(0, 0);}
-    8%  {opacity:1; transform: scale(1) translate(-20px, -10px);}
-    15%  {opacity:0; transform: scale(1.2) translate(0, 0);}
-    22%  {opacity:0;}
-    29%  {opacity:0;}
-    36%  {opacity:0;}
-    44%  {opacity:0;}
-    52%  {opacity:0;}
-    60%  {opacity:0;}
-    68%  {opacity:0;}
-    76%  {opacity:0;}
-    84%  {opacity:0;}
-    92%  {opacity:0;}
-    100%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+        4%  {opacity:1; transform: scale(1) translate(-20px, -10px);}
+        8%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+        16%  {opacity:0;}
+        20%  {opacity:0;}
+        24%  {opacity:0;}
+        28%  {opacity:0;}
+        32%  {opacity:0;}
+        36%  {opacity:0;}
+        40%  {opacity:0;}
+        44%  {opacity:0;}
+        48%  {opacity:0;}
+        52%  {opacity:0;}
+        56%  {opacity:0;}
+        60%  {opacity:0;}
+        64%  {opacity:0;}
+        68%  {opacity:0;}
+        72%  {opacity:0;}
+        76%  {opacity:0;}
+        80%  {opacity:0;}
+        84%  {opacity:0;}
+        88%  {opacity:0;}
+        92%  {opacity:0;}
+        96%  {opacity:0;}
+        100%  {opacity:1; transform: scale(1.2) translate(0, 0);}
 }
 @keyframes slide-02 {
     0%  { opacity:0;}
-    8%  {opacity:0; transform: scale(1) translate(-20px, -10px);}
-    15%  {opacity:1; transform: scale(1.2) translate(0, 0);}
-    22%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
-    29%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    4%  {opacity:0; transform: scale(1) translate(-20px, -10px);}
+    8%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    16%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    20%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    24%  {opacity:0;}
+    28%  {opacity:0;}
+    32%  {opacity:0;}
     36%  {opacity:0;}
+    40%  {opacity:0;}
     44%  {opacity:0;}
+    48%  {opacity:0;}
     52%  {opacity:0;}
+    56%  {opacity:0;}
     60%  {opacity:0;}
+    64%  {opacity:0;}
     68%  {opacity:0;}
+    72%  {opacity:0;}
     76%  {opacity:0;}
+    80%  {opacity:0;}
     84%  {opacity:0;}
+    88%  {opacity:0;}
     92%  {opacity:0;}
+    96%  {opacity:0;}
     100%  {opacity:0;}
 }
 @keyframes slide-03 {
     0%  { opacity:0;}
-    8%  {opacity:0;}
-    15%  {opacity:0; transform: scale(1.2) translate(0, 0);}
-    22%  {opacity:1; transform: scale(1.2) translate(-20px, 10px);}
-    29%  {opacity:1; transform: scale(1) translate(20px, -10px);}
-    36%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    4%  { opacity:0;}
+    8%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    16%  {opacity:1; transform: scale(1.2) translate(-20px, 10px);}
+    20%  {opacity:1; transform: scale(1) translate(20px, -10px);}
+    24%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    28%  {opacity:0;}
+    32%  {opacity:0;}
+    36%  {opacity:0;}
+    40%  {opacity:0;}
     44%  {opacity:0;}
+    48%  {opacity:0;}
     52%  {opacity:0;}
+    56%  {opacity:0;}
     60%  {opacity:0;}
+    64%  {opacity:0;}
     68%  {opacity:0;}
+    72%  {opacity:0;}
     76%  {opacity:0;}
+    80%  {opacity:0;}
     84%  {opacity:0;}
+    88%  {opacity:0;}
     92%  {opacity:0;}
+    96%  {opacity:0;}
     100%  {opacity:0;}
 }
 @keyframes slide-04 {
     0%  { opacity:0;}
-    8%  {opacity:0;}
-    15%  {opacity:0;}
-    22%  {opacity:0; transform: scale(1) translate(20px, -10px);}
-    29%  {opacity:1; transform: scale(1.2) translate(0, 0);}
-    36%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
-    44%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16%  {opacity:0; transform: scale(1) translate(20px, -10px);}
+    20%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    24%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    28%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    32%  {opacity:0;}
+    36%  {opacity:0;}
+    40%  {opacity:0;}
+    44%  {opacity:0;}
+    48%  {opacity:0;}
     52%  {opacity:0;}
+    56%  {opacity:0;}
     60%  {opacity:0;}
+    64%  {opacity:0;}
     68%  {opacity:0;}
+    72%  {opacity:0;}
     76%  {opacity:0;}
+    80%  {opacity:0;}
     84%  {opacity:0;}
+    88%  {opacity:0;}
     92%  {opacity:0;}
+    96%  {opacity:0;}
     100%  {opacity:0;}
 }
 @keyframes slide-05 {
     0%  { opacity:0;}
-    8%  {opacity:0;}
-    15%  {opacity:0;}
-    22%  {opacity:0;}
-    29%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
-    36%  {opacity:1; transform: scale(1.2) translate(0, 0);}
-    44%  {opacity:1; transform: scale(1) translate(20px, -10px);}
-    52%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
+    24%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    28%  {opacity:1; transform: scale(1) translate(20px, -10px);}
+    32%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    36%  {opacity:0;}
+    40%  {opacity:0;}
+    44%  {opacity:0;}
+    48%  {opacity:0;}
+    52%  {opacity:0;}
+    56%  {opacity:0;}
     60%  {opacity:0;}
+    64%  {opacity:0;}
     68%  {opacity:0;}
+    72%  {opacity:0;}
     76%  {opacity:0;}
+    80%  {opacity:0;}
     84%  {opacity:0;}
+    88%  {opacity:0;}
     92%  {opacity:0;}
+    96%  {opacity:0;}
     100%  {opacity:0;}
 }
 @keyframes slide-06 {
     0%  { opacity:0;}
-    8%  {opacity:0;}
-    15%  {opacity:0;}
-    22%  {opacity:0;}
-    29%  {opacity:0;}
-    36%  {opacity:0; transform: scale(1) translate(20px, -10px);}
-    44%  {opacity:1; transform: scale(1.2) translate(0, 0);}
-    52%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
-    60%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  {opacity:0; transform: scale(1) translate(20px, -10px);}
+    28%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    32%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    36%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    40%  {opacity:0;}
+    44%  {opacity:0;}
+    48%  {opacity:0;}
+    52%  {opacity:0;}
+    56%  {opacity:0;}
+    60%  {opacity:0;}
+    64%  {opacity:0;}
     68%  {opacity:0;}
+    72%  {opacity:0;}
     76%  {opacity:0;}
+    80%  {opacity:0;}
     84%  {opacity:0;}
+    88%  {opacity:0;}
     92%  {opacity:0;}
+    96%  {opacity:0;}
     100%  {opacity:0;}
 }
 @keyframes slide-07 {
     0%  { opacity:0;}
-    8%  {opacity:0;}
-    15%  {opacity:0;}
-    22%  {opacity:0;}
-    29%  {opacity:0;}
-    36%  {opacity:0;}
-    44%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
-    52%  {opacity:1; transform: scale(1.2) translate(0, 0);}
-    60%  {opacity:1; transform: scale(1) translate(20px, -10px);}
-    68%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
+    32%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    36%  {opacity:1; transform: scale(1) translate(20px, -10px);}
+    40%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    44%  {opacity:0;}
+    48%  {opacity:0;}
+    52%  {opacity:0;}
+    56%  {opacity:0;}
+    60%  {opacity:0;}
+    64%  {opacity:0;}
+    68%  {opacity:0;}
+    72%  {opacity:0;}
     76%  {opacity:0;}
+    80%  {opacity:0;}
     84%  {opacity:0;}
+    88%  {opacity:0;}
     92%  {opacity:0;}
+    96%  {opacity:0;}
     100%  {opacity:0;}
 }
 @keyframes slide-08 {
     0%  { opacity:0;}
-    8%  {opacity:0;}
-    15%  {opacity:0;}
-    22%  {opacity:0;}
-    29%  {opacity:0;}
-    36%  {opacity:0;}
-    44%  {opacity:0;}
-    52%  {opacity:0; transform: scale(1) translate(20px, -10px);}
-    60%  {opacity:1; transform: scale(1.2) translate(0, 0);}
-    68%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
-    76%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  { opacity:0;}
+    32%  {opacity:0; transform: scale(1) translate(20px, -10px);}
+    36%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    40%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    44%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    48%  {opacity:0;}
+    52%  {opacity:0;}
+    56%  {opacity:0;}
+    60%  {opacity:0;}
+    64%  {opacity:0;}
+    68%  {opacity:0;}
+    72%  {opacity:0;}
+    76%  {opacity:0;}
+    80%  {opacity:0;}
     84%  {opacity:0;}
+    88%  {opacity:0;}
     92%  {opacity:0;}
+    96%  {opacity:0;}
     100%  {opacity:0;}
 }
 @keyframes slide-09 {
     0%  { opacity:0;}
-    8%  {opacity:0;}
-    15%  {opacity:0;}
-    22%  {opacity:0;}
-    29%  {opacity:0;}
-    36%  {opacity:0;}
-    44%  {opacity:0;}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  { opacity:0;}
+    32%  { opacity:0;}
+    36%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
+    40%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    44%  {opacity:1; transform: scale(1) translate(20px, -10px);}
+    48%  {opacity:0;transform: scale(1.2) translate(0, 0);}
     52%  {opacity:0;}
-    60%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
-    68%  {opacity:1; transform: scale(1.2) translate(0, 0);}
-    76%  {opacity:1; transform: scale(1) translate(20px, -10px);}
-    84%  {opacity:0;transform: scale(1.2) translate(0, 0);}
+    56%  {opacity:0;}
+    60%  {opacity:0;}
+    64%  {opacity:0;}
+    68%  {opacity:0;}
+    72%  {opacity:0;}
+    76%  {opacity:0;}
+    80%  {opacity:0;}
+    84%  {opacity:0;}
+    88%  {opacity:0;}
     92%  {opacity:0;}
+    96%  {opacity:0;}
     100%  {opacity:0;}
 }
 @keyframes slide-10 {
     0%  { opacity:0;}
-    8%  {opacity:0;}
-    15%  {opacity:0;}
-    22%  {opacity:0;}
-    29%  {opacity:0;}
-    36%  {opacity:0;}
-    44%  {opacity:0;}
-    52%  {opacity:0;}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  { opacity:0;}
+    32%  { opacity:0;}
+    36%  { opacity:0;}
+    40%  {opacity:0; transform: scale(1) translate(20px, -10px);}
+    44%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    48%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    52%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    56%  {opacity:0;}
     60%  {opacity:0;}
-    68%  {opacity:0; transform: scale(1) translate(20px, -10px);}
+    64%  {opacity:0;}
+    68%  {opacity:0;}
+    72%  {opacity:0;}
+    76%  {opacity:0;}
+    80%  {opacity:0;}
+    84%  {opacity:0;}
+    88%  {opacity:0;}
+    92%  {opacity:0;}
+    96%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-11 {
+    0%  { opacity:0;}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  { opacity:0;}
+    32%  { opacity:0;}
+    36%  { opacity:0;}
+    40%  { opacity:0;}
+    44%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
+    48%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    52%  {opacity:1; transform: scale(1) translate(20px, -10px);}
+    56%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    60%  {opacity:0;}
+    64%  {opacity:0;}
+    68%  {opacity:0;}
+    72%  {opacity:0;}
+    76%  {opacity:0;}
+    80%  {opacity:0;}
+    84%  {opacity:0;}
+    88%  {opacity:0;}
+    92%  {opacity:0;}
+    96%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-12 {
+    0%  { opacity:0;}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  { opacity:0;}
+    32%  { opacity:0;}
+    36%  { opacity:0;}
+    40%  { opacity:0;}
+    44%  { opacity:0;}
+    48%  {opacity:0; transform: scale(1) translate(20px, -10px);}
+    52%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    56%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    60%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    64%  {opacity:0;}
+    68%  {opacity:0;}
+    72%  {opacity:0;}
+    76%  {opacity:0;}
+    80%  {opacity:0;}
+    84%  {opacity:0;}
+    88%  {opacity:0;}
+    92%  {opacity:0;}
+    96%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-13 {
+    0%  { opacity:0;}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  { opacity:0;}
+    32%  { opacity:0;}
+    36%  { opacity:0;}
+    40%  { opacity:0;}
+    44%  { opacity:0;}
+    48%  { opacity:0;}
+    52%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
+    56%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    60%  {opacity:1; transform: scale(1) translate(20px, -10px);}
+    64%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    68%  {opacity:0;}
+    72%  {opacity:0;}
+    76%  {opacity:0;}
+    80%  {opacity:0;}
+    84%  {opacity:0;}
+    88%  {opacity:0;}
+    92%  {opacity:0;}
+    96%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-14 {
+    0%  { opacity:0;}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  { opacity:0;}
+    32%  { opacity:0;}
+    36%  { opacity:0;}
+    40%  { opacity:0;}
+    44%  { opacity:0;}
+    48%  { opacity:0;}
+    52%  { opacity:0;}
+    56%  {opacity:0; transform: scale(1) translate(20px, -10px);}
+    60%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    64%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    68%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    72%  {opacity:0;}
+    76%  {opacity:0;}
+    80%  {opacity:0;}
+    84%  {opacity:0;}
+    88%  {opacity:0;}
+    92%  {opacity:0;}
+    96%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-15 {
+    0%  { opacity:0;}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  { opacity:0;}
+    32%  { opacity:0;}
+    36%  { opacity:0;}
+    40%  { opacity:0;}
+    44%  { opacity:0;}
+    48%  { opacity:0;}
+    52%  { opacity:0;}
+    56%  { opacity:0;}
+    60%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
+    64%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    68%  {opacity:1; transform: scale(1) translate(20px, -10px);}
+    72%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    76%  {opacity:0;}
+    80%  {opacity:0;}
+    84%  {opacity:0;}
+    88%  {opacity:0;}
+    92%  {opacity:0;}
+    96%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-16 {
+    0%  { opacity:0;}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  { opacity:0;}
+    32%  { opacity:0;}
+    36%  { opacity:0;}
+    40%  { opacity:0;}
+    44%  { opacity:0;}
+    48%  { opacity:0;}
+    52%  { opacity:0;}
+    56%  { opacity:0;}
+    60%  { opacity:0;}
+    64%  {opacity:0; transform: scale(1) translate(20px, -10px);}
+    68%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    72%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    76%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    80%  {opacity:0;}
+    84%  {opacity:0;}
+    88%  {opacity:0;}
+    92%  {opacity:0;}
+    96%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-17 {
+    0%  { opacity:0;}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  { opacity:0;}
+    32%  { opacity:0;}
+    36%  { opacity:0;}
+    40%  { opacity:0;}
+    44%  { opacity:0;}
+    48%  { opacity:0;}
+    52%  { opacity:0;}
+    56%  { opacity:0;}
+    60%  { opacity:0;}
+    64%  { opacity:0;}
+    68%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
+    72%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    76%  {opacity:1; transform: scale(1) translate(20px, -10px);}
+    80%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    84%  {opacity:0;}
+    88%  {opacity:0;}
+    92%  {opacity:0;}
+    96%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-18 {
+    0%  { opacity:0;}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  { opacity:0;}
+    32%  { opacity:0;}
+    36%  { opacity:0;}
+    40%  { opacity:0;}
+    44%  { opacity:0;}
+    48%  { opacity:0;}
+    52%  { opacity:0;}
+    56%  { opacity:0;}
+    60%  { opacity:0;}
+    64%  { opacity:0;}
+    68%  { opacity:0;}
+    72%  {opacity:0; transform: scale(1) translate(20px, -10px);}
     76%  {opacity:1; transform: scale(1.2) translate(0, 0);}
-    84%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
-    92%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    80%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    84%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    88%  {opacity:0;}
+    92%  {opacity:0;}
+    96%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-19 {
+    0%  { opacity:0;}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  { opacity:0;}
+    32%  { opacity:0;}
+    36%  { opacity:0;}
+    40%  { opacity:0;}
+    44%  { opacity:0;}
+    48%  { opacity:0;}
+    52%  { opacity:0;}
+    56%  { opacity:0;}
+    60%  { opacity:0;}
+    64%  { opacity:0;}
+    68%  { opacity:0;}
+    72%  { opacity:0;}
+    76%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
+    80%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    84%  {opacity:1; transform: scale(1) translate(20px, -10px);}
+    88%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    92%  {opacity:0;}
+    96%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-20 {
+    0%  { opacity:0;}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  { opacity:0;}
+    32%  { opacity:0;}
+    36%  { opacity:0;}
+    40%  { opacity:0;}
+    44%  { opacity:0;}
+    48%  { opacity:0;}
+    52%  { opacity:0;}
+    56%  { opacity:0;}
+    60%  { opacity:0;}
+    64%  { opacity:0;}
+    68%  { opacity:0;}
+    72%  { opacity:0;}
+    76%  { opacity:0;}
+    80%  {opacity:0; transform: scale(1) translate(20px, -10px);}
+    84%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    88%  {opacity:1; transform: scale(1) translate(-20px, 10px);}
+    92%  {opacity:0; transform: scale(1.2) translate(0, 0);}
+    96%  {opacity:0;}
+    100%  {opacity:0;}
+}
+@keyframes slide-21 {
+    0%  { opacity:0;}
+    4%  { opacity:0;}
+    8%  { opacity:0;}
+    16% { opacity:0;}
+    20% { opacity:0;}
+    24%  { opacity:0;}
+    28%  { opacity:0;}
+    32%  { opacity:0;}
+    36%  { opacity:0;}
+    40%  { opacity:0;}
+    44%  { opacity:0;}
+    48%  { opacity:0;}
+    52%  { opacity:0;}
+    56%  { opacity:0;}
+    60%  { opacity:0;}
+    64%  { opacity:0;}
+    68%  { opacity:0;}
+    72%  { opacity:0;}
+    76%  { opacity:0;}
+    80%  { opacity:0;}
+    84%  {opacity:0; transform: scale(1) translate(-20px, 10px);}
+    88%  {opacity:1; transform: scale(1.2) translate(0, 0);}
+    92%  {opacity:1; transform: scale(1) translate(20px, -10px);}
+    96%  {opacity:1; transform: scale(1.2) translate(0, 0);}
     100%  {opacity:0;}
 }
