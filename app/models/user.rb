@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   enum role: {admin: 0, teacher: 1, student: 2}
   ransacker :role, formatter: proc {|v| roles[v]} do |parent|
     parent.table[:role]
@@ -14,10 +15,11 @@ class User < ApplicationRecord
   validates :name, presence: true, length: { maximum: 40 }
   validates :Tk, presence: true, length: {minium: 10, maximum: 100}, uniqueness: true
   validates :password, presence: true, length: { minimum: 6 }, if: :password
+  validates :email, length: {in: 10..255}, uniqueness: {case_sensitive: false}, allow_blank: true
 
   scope :asc_name, ->{order name: :asc}
   scope :student_with, ->id {where("class_user_id = ?", id)}
-  
+
 
   delegate :name, to: :class_user, prefix: :class_user, allow_nil: true
 

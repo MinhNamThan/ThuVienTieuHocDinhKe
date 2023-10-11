@@ -122,8 +122,8 @@ Rails.application.configure do
   config.action_mailer.default_url_options = {host: "103.166.185.90"}
   config.action_mailer.smtp_settings = {
     domain: "mail.google.com",
-    user_name: "than.minh.nam@sun-asterisk.com",
-    password: "iacjrgqdcbheiqbd",
+    user_name: "thanminhnam1702@gmail.com",
+    password: "vsrxwazhcwvbbmkm",
     address: "smtp.gmail.com",
     port: "587",
     authentication: :plain,
