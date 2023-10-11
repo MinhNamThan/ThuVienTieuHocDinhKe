@@ -13,7 +13,7 @@ class UsersController < ApplicationController
         redirect_to edit_user_path(@user)
       else
         flash[:alert] = "Không thành công"
-        render :new
+        redirect_to edit_user_path(@user)
       end
   end
 
